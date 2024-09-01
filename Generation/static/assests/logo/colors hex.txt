@@ -1,0 +1,5 @@
+#fefefe white
+#25275e Indigo (Rainbow)
+#6a8cbf Silver Lake Blue
+#cab9d3 Lavender Gray
+#e5dfee Platinum

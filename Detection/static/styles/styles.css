@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "Nazalization";
+    src: url("../assests/fonts/nasalization-rg.otf");
+}
+
+body {
+    font-family: "Nazalization", sans-serif;
+    background-color: rgba(37, 39, 94, 0.95);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media(max-width: 991px){
+    .offcanvas {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.navbar, .offcanvas {
+    background-color: rgba(37, 39, 94, 0.75);
+}
+
+.box {
+    background-color: white;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 100px);
+    padding-top: 200px;
+}
+
+.row-spacing {
+    border-bottom: 2px solid white; /* This adds the horizontal line */
+    margin-bottom: 10px; /* This adds the space below each row */
+    padding-bottom: 10px; /* This adds the space above the line */
+}
+
+.col-spacing {
+    margin-right: 10px; /* This adds the space to the right of the column */
+    padding-right: 10px; /* This adds the space to the left of the line */
+    padding-bottom: 10px; /* This adds the space below the line */
+}
+
+.last-row {
+    border-bottom: none; /* This removes the line under the last row */
+    padding-bottom: 0; /* This removes the space below the line in the last row */
+}
+
+.col-padding {
+    padding-left: 10px; /* This adds the space to the right of the line in the second column */
+}
+
+#uploadedImage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.col {
+    color: white;
+}
+
+:root {
+    --button-width: 50%; /* Variable for button width */
+    --button-bg-color: #f94ca4; /* Pink button background color */
+    --button-bg-hover-color: #e83e8c; /* Pink button hover color */
+}
+
+.upload-box, .result-box {
+    border: 3px dashed #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    height: 300px; /* Set a fixed height for the boxes */
+}
+
+.upload-box input[type="file"], .result-box input[type="file"] {
+    display: none;
+}
+
+.upload-box img, .result-box img {
+    height: 40px;
+    margin-top: 25px;
+}
+
+.upload-box img.uploaded, .result-box img.uploaded {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.swap-button {
+    width: var(--button-width); /* Use the CSS variable for button width */
+    margin: 25px auto;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swap-button:hover {
+    background-color: var(--button-bg-hover-color);
+}
+
+/* Footer adjustment */
+
+.footer-distributed {
+    background-color: rgba(37, 39, 94, 0.95);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+    margin-top: auto;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Nazalization', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #b957ce;
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+/* Updated styles for video elements */
+.upload-box, .result-box {
+    border: 3px dashed #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    max-width: 500px;
+    height: 300px; /* Set a fixed height for the boxes */
+}
+
+.upload-box video, .result-box video {
+    width: 100%;  /* Make the video take up the full width of the container */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    display: none; /* Initially hide the video until it's loaded */
+}
+
+.upload-box video.uploaded, .result-box video.uploaded {
+    display: block; /* Display video once it has been uploaded */
+    border: none; /* Hide border once video is selected */
+}
+
+/* Form adjustments */
+form {
+    width: 90%;
+    max-width: 600px;
+    background: transparent; /* Set background to transparent */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a border for better visibility */
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+    background: transparent; /* Remove background */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: var(--button-bg-color);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-bg-hover-color);
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+    top: -25px;
+    left: 10px;
+    font-size: 14px;
+    background: transparent; /* Remove background */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+/* Custom tab bar styles */
+.custom-tab-bar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(37, 39, 94, 0.75);
+    padding: 10px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.custom-tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.custom-tab.active {
+    background-color: var(--button-bg-color);
+    color: #fff;
+}
