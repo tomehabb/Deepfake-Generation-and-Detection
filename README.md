@@ -13,5 +13,5 @@ To mitigate the risks associated with deepfakes, we have implemented a detection
 ## Applications
 This project has both academic and practical applications. Academically, it provides a foundation for further research in deepfake detection and generation, contributing to the development of new methods for handling synthetic media. Practically, the system can be employed by law enforcement, media outlets, and cybersecurity professionals to identify and combat malicious deepfakes.
 
-## Getting Started
-To run the project, clone the repository and follow the installation instructions below.
+## Project Video
+https://github.com/user-attachments/assets/028e8068-b7ee-4cdb-850e-ed86fe7a9a53
